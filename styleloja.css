@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+}
+.card:hover{
+    flex-basis: 35vw;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .container{
+        width: 100%; 
+    }
+}
+
+
+body {
+	margin: 0; 
+	padding: 0;
+	font-family: montserrat;
+}
+
+nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+	color: #fff;
+    background: rgba(0,0,0,0.5);
+}
+.logo {
+	padding: 0 15px;
+    width: 150px;
+}
+
+.menu ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+.menu ul li a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: montserrat;
+	color: #fff;
+	padding: 5px 15px;
+}
+.menu ul li a:hover{
+    background: green;
+}
+.socials a {
+	text-decoration: none;
+	background: green;
+	color: #fff;
+	padding: 10px 35px;
+}
+.header {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/img-loja/pin_grupo.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin: 6% auto 0;
+}
+.single-card {
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 15px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 0.3s ease;
+	overflow: hidden;
+	background: #414852;
+	border-radius: 15px;
+	transition: all 0.8s ease-in-out;
+}
+.single-card:hover {
+	transform: translateY(-10px);
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.img-area img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+.img-area:hover img {
+	transform: scale(1.1);
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 174, 255, 0.8);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.single-card:hover .overlay {
+	opacity: 1;
+}
+.add-to-cart, .view-details {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	margin-bottom: 10px;
+}
+.add-to-cart:hover, .view-details:hover {
+	background-color: #fdb704;
+	color: #fff;
+	border: none;
+}
+.info {
+	padding: 10px;
+	text-align: center;
+	color: #ddd;
+}
+.info h3 {
+	margin: 15px 0 10px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', sans-serif;
+}
+.info .price {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: aqua;
+}
+
+
+
+
+@media (max-width: 1000px) {
+	nav {
+		flex-direction: column;
+		align-items: flex;
+	}
+	.menu ul {
+		padding: 0;
+	}
+	.menu ul li {
+		margin: 0 15px 0 0;
+	}
+	.socials {
+		margin-top: 25px;
+	}
+	.banner-text {
+		left: 50%;
+		text-align: center;
+		width: 70%;
+	}
+    .banner-text h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px) {
+	.logo {
+		margin-top: 0;
+		font-size: 17px;
+	}
+	nav {
+		padding: 15px;
+	}
+	.menu ul li a {
+		font-size: 10px;
+        padding: 5px;
+	}
+	.socials {
+		display: none;
+	}
+	.banner-text {
+		left: 50%;
+		text-align: center;
+		width: 80%;
+	}
+    .banner-text h1 {
+        font-size: 18px;
+    }
+	.banner-text p {
+		margin: 15px 0;
+		font-size: 11px;
+	}
+    .banner-text button {
+        font-size: 12px;
+    }
+}
+
+body {
+	margin: 0; 
+	padding: 0;
+	font-family: montserrat;
+}
+nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+	color: #fff;
+    background: rgba(0,0,0,0.5);
+}
+.logo {
+	font-size: 25px;
+	color: #fff;
+	padding: 0 15px;
+}
+.menu ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+.menu ul li a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: montserrat;
+	color: #fff;
+	padding: 5px 15px;
+}
+.menu ul li a:hover{
+    background: #cb71b4;
+}
+.socials a {
+	text-decoration: none;
+	background: #cb71b4;
+	color: #fff;
+	padding: 10px 35px;
+}
+.header {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/img-loja/pin_grupo.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.banner-text {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 26%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+.banner-text h1 {
+	font-size: 60px;
+	margin: 0;
+}
+.banner-text p {
+	margin: 15px 0 40px;
+}
+.banner-text button {
+	background: #cb71b4;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-family: montserrat;
+	display: inline-block;
+}
+
